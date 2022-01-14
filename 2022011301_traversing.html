@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .wrap{
+            width: 800px;
+            height: 800px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            align-content:flex-start;
+        
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            outline: 1px solid red;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box10</div>
+        <div class="box">box11</div>
+        <div class="box">box12</div>
+        
+    </div>
+
+    <div class="wrap">
+        <div class="box">box11</div>
+        <p>1</p>
+        
+    </div>
+    
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <script>
+       // $(".box:first-child").css("background","red");//選取第一個
+       // $(".box:nth-child(2)").css("background","purple");//選取第幾個須符合html架構
+       // $(".box:first-of-type").css("background","blue");//選取同類第一個
+        //$(".box:last-child").css("background","black");//選取最後一個
+       // $(".wrap:nth-child(1)").css("background","yellow")//無空格選到wrap
+      //  $(".wrap :nth-child(1)").css("background","yellow");//有空格選到第一個box
+      //  $("div:nth-child(4)").css("background","green");
+          $(".box :only-child").css("background","black");
+       //  $("div:only-of-type").css("background","black");
+
+    
+
+    </script>
+</body>
+</html>

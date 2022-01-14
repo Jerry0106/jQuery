@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>Elon musk</td>
+                    <td>09232323</td>
+                    <td>cajpeji@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>Graham-Newman</td>
+                    <td>0923232</td>
+                    <td>cajpeji@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>buffet wallen</td>
+                    <td>092321321e</td>
+                    <td>sdsds@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>buffet wallen</td>
+                    <td>092321321e</td>
+                    <td>sdsds@gmail</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(":checkbox").change(function(){
+            if($(this).is(":checked")){
+                $(this).parent().parent()
+                .css("background","lightblue");
+            }else{
+                $(this).parent().parent()
+                .css("background","white");
+            }
+        })
+    </script>
+
+</body>
+</html>
