@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        
+    <style>
+        .wrap{
+            width: 1200px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content:flex-start;
+            justify-content: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            outline: 5px solid;
+            border-radius: 50%;
+            margin: 20px;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <img src="./imgs/person4.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="./imgs/person5.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="./imgs/person3.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="./imgs/person2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="./imgs/person1.jpg" alt="">
+        </div>
+    
+        
+    </div>
+
+    
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <script>
+        $(".box").click(function() {
+            $(this).css("outline","5px solid red");
+            $(this).siblings().css("outline","5px solid");
+    });
+    </script>
+</body>
+</html>
