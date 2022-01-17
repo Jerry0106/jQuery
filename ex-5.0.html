@@ -76,10 +76,9 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script>
       $(".slider-dots li").hover(function(){
-        $(this).css("background", "#fff")
-        $('.img-wrap').css("transfrom","translateX(-800px)")
-      },function(){
-        $(this).css("background","none");
+        console.log("this",$(this).index());
+        $(this).css("background", "#fff").siblings()
+        .css("background","none");
          const moveX = $(this).index()* -800;
         $("ul.img-wrap").css("transform",`translateX(${moveX}px)`);
       });
