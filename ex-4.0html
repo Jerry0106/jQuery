@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <style>
+        .container{
+            background-color: bisque;
+            width: 40%;
+            margin-top: 5rem;
+            padding: 3rem;
+
+        }
+        .row{
+            justify-content: center;
+        }
+        .form1{
+            margin-bottom: 2rem;
+        }
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="form1">
+                <div class="mb-3">
+                    <label for="exampleInputuser1" class="form-label">user</label>
+                    <input type="text" class="form-control" id="exampleInputuser1">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button style="padding: 2px pt1" type="submit" class="btn btn-primary">auto input</button>
+              </form>
+        </div>
+    </div>
+   
+    
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $("button").click(function() {
+         $("input").val("666")
+         .eq(1).val("capri@gmail")
+         .end().eq(2).val("12345687");
+      
+        });
+    
+        $("button").click(function(){
+            event.preventDefault();
+            console.log("hi");
+        });
+      
+    </script>
+</body>
+</html>
