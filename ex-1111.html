@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>螞蟻部落</title>
+<style type="text/css">
+body{
+  background: #000;
+}
+.sun{
+  width: 280px;
+  height: 280px;
+  margin-top: 200px;
+  margin-left: 300px;
+  border:1px solid #ffc14de1;
+  background:#ffc14de1;
+  border-radius: 50%;
+  box-shadow:0px 0px 35px #ffc14de1;
+  animation:action 10s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+@keyframes action{
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg)}
+}
+.earth{
+  border:1px solid #4992e6;
+  background:#4992e6;
+  box-shadow:0px 0px 35px #4992e6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: -90px;
+  animation:actions 5s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+@keyframes actions{
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg)}
+}
+.moon{
+  border:1px solid #c93c3c;
+  background:#c02a2a;
+  box-shadow:0px 0px 35px #b82525;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: -20px;                
+}                
+</style>
+</head>
+<body>
+<div class="sun">  
+  <div class="earth">       
+    <div class="moon"></div>
+  </div>
+</div>
+</body>
+</html>

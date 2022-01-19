@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex10</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-4.6.1-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    .color-demo-area {
+      height: 400px;
+      background-color: #777;
+    }
+
+    .color-select-area {
+      height: 400px;
+      background-color: #eee;
+    }
+    .color-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .color-circle:nth-child(1){
+      background-color: lightskyblue;
+    }
+
+    .color-circle:nth-child(2) {
+      background-color: lightsalmon;
+    }
+    .color-chang{
+      background-color: lightskyblue;
+    }
+    .color-chang2{
+      background-color: lightsalmon;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="color-demo-area"></div>
+        </div>
+        <div class="col-6">
+          <div class="color-select-area d-flex">
+            <div class="color-circle"></div>
+            <div class="color-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/jquery-3.6.0.js"></script>
+ <script>
+    // $(".color-circle").eq(0).click(function(){
+    //   $(".color-demo-area").toggleClass("color-chang");
+    // });
+    // $(".color-circle").eq(1).click(function(){
+    //   $(".color-demo-area").toggleClass("color-chang2");
+    // });
+    
+    const circle =document.querySelectorAll(".color-circle");
+
+    circle.forEach((Element) => {
+      element.addEventListener("click",function(){
+        console.log("hi",getComputedStyle(this).backgroundColor);
+      });//獲得背景顏色 js寫法
+    });
+ </script>
