@@ -6,13 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet"  href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
-    
-
 </head>
 <body>
-    
-    
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>Elon musk</td>
+                    <td>09232323</td>
+                    <td>cajpeji@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>Graham-Newman</td>
+                    <td>0923232</td>
+                    <td>cajpeji@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>buffet wallen</td>
+                    <td>092321321e</td>
+                    <td>sdsds@gmail</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"/></td>
+                    <td>buffet wallen</td>
+                    <td>092321321e</td>
+                    <td>sdsds@gmail</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // $(":input").click(function(){
+        //     console.log("hi",$(this).attr("checked"));
+        //     console.log("hi",$(this).prop("checked"));
+        //     $(this).css("background","lightblue");
+        //     if($(this).prop(":checked")){
+        //         $(this).clost("tr").css("background","lightblue");
+        //     }else{
+        //         $(this).clost("tr").css("background","transparent");
+        //     }
+        // });
+
+        $("input").click(function(){
+            $("tr").css("background","transparent");
+            $("input:checked").closest("tr").css("background","lightblue")
+        })
+    </script>
+
 </body>
 </html>

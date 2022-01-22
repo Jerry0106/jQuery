@@ -10,9 +10,24 @@
 
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <!--before-->
+            <ul>
+                <!--prepend-->
+                <li>item 1</li>
+                <li>item 2</li>
+                <!--append-->
+            </ul>
+            <!--affter-->
+        </div>
+    </div>
     
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $("ul").prepend("<li>item 3</li>");
+        $("ul").before("<li>item 3</li>");
+    </script>
 </body>
 </html>
