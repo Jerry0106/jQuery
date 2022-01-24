@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        nav{
+            background-color: rgba(148, 131, 131, 0.822);
+            min-width: 100%;
+        }
+        .mobile-menu-btn{
+            font-size: 2rem;
+            align-self: center;     
+        }
+    
+      
+        .nav-right{
+            font-size: 2rem;
+            align-self: center;
+            
+        }
+        .nav-top-right{
+            display: inline-block;
+        }
+        .videobox {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        .videobox iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h2{
+            text-align: center;
+        }
+       
+        a:hover{
+            /* background-color: rgb(93, 85, 212); */
+            border-bottom: 1px solid black;
+        }
+        .lv-homepage-push-new__title{
+            margin-top: 1rem;
+        }
+        .box{
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box1{
+            background-color: rgb(252, 249, 249);
+            text-align: center;
+            padding: 5px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto; 
+            border: solid 1px black;
+            margin-top: 1rem;
+        }
+
+          .botton-area{
+            position: absolute;
+            margin-left: 50px;
+            margin-top: -200px;
+            color: white;
+        }
+        .img-wrap{
+            width: 100%;
+            position: relative;
+        }
+        .box3{
+            display: flex;
+            margin: 2rem;
+            
+        
+        }
+        .img-wrap img{
+            width: 100%;
+        }
+        .button1{
+            width: 250px;
+            background-color: white;
+            border: none;
+            color: black;   
+            text-align: center;
+            line-height: 100px;
+            justify-content: center;
+
+            
+        }  
+        .button2{
+            width: 250px;
+            height: 50px;
+            border: 1px solid white;
+            text-align: center;
+            
+            
+        }
+        .nullbox{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+      
+        .pict{
+            width: 100%; 
+          
+            
+           
+        }
+        .pict img{
+            width: 100%;
+        }
+        .pict1{
+            width: 100%;
+           
+             
+        }
+        .pict1 img{
+            width: 100%;
+            
+            
+        }
+        .pict-move{
+            display: flex;
+        }
+        .last{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 20px;
+            
+        }
+        .etext{
+            border-bottom:1px solid rgb(41, 25, 25);
+
+        }
+    
+        .bag{
+            width: 100%;
+            background-color: rgb(19, 2, 2);
+            height: 100px;
+        }
+        .move-last{
+            text-align: left;
+        }
+        
+        .lastnav-flv{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 auto;
+            color: white;
+        }
+        
+        .move-last ul li{
+            display: inline;
+            padding: 20px;
+            margin-left: -30px;
+            align-self: center;
+        }
+   
+    </style>
+</head>
+<body>
+     <div class="nav-top-bg">
+      <div class="nav-top">
+        <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" style="color: black;">配送至： 
+            台灣地區</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">需要協助？</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">0080 149 1188</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">環保及可持續發展</a>
+        </li>
+      </ul>
+    </div>
+    
+</div>
+    <nav>
+        <div class="container d-flex">
+            <div class="row justify-content-between">
+                <div class="mobile-menu-btn d-block d-xl-none">  
+                    <a href="#" style="color: rgb(19, 18, 18);">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                <a href="#" style="color: black;">
+                    <i class="far fa-heart"></i>
+                </a>  
+                    
+                
+                </div>
+
+                <div class="logo_wrap">
+                    <!-- <h2> LOUIS VUITTON</h2> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 45" width="232" height="45" preserveAspectRatio="xMinYMid"><path d="M428.858.793h-5.451l-.793.892V27.85L394.764 0l-.794.793v42.222l.793.793h5.452l.892-.793V16.453l27.355 27.355h1.288V1.685zm-137.568.892v6.343h7.136v35.78h7.137V8.027h6.343l.892-.892V.793h-20.715zm26.265 0v6.343h7.136v35.78h7.136V8.027h6.343l.793-.892V.793h-20.615zM7.136.793H.793L0 1.685v42.123h21.507v-7.136H7.137zm40.636 0A21.507 21.507 0 1069.28 22.3 21.507 21.507 0 0047.772.793zm0 35.78A14.371 14.371 0 1162.044 22.3a14.272 14.272 0 01-14.272 14.272zM365.327.792A21.507 21.507 0 10386.735 22.3 21.507 21.507 0 00365.327.793zm0 35.78A14.371 14.371 0 11379.599 22.3a14.272 14.272 0 01-14.272 14.272zM101.094.792l-.793.793v27.85a7.136 7.136 0 01-7.136 7.136 7.235 7.235 0 01-7.235-7.136V1.586l-.793-.793h-5.55l-.793.793v27.85a14.371 14.371 0 1028.644 0V1.586l-.793-.793zm20.616.892v42.123h6.343l.892-.793V.793h-6.343zM251.547.793l-.893.793v27.85a7.136 7.136 0 01-14.272 0V1.586l-.892-.793h-5.45l-.794.793v27.85a14.371 14.371 0 1028.644 0V1.586l-.892-.793zm20.615.892v42.123h6.343l.793-.793V.793h-6.343zM155.804 19.03a54.016 54.016 0 01-4.757-2.875c-1.586-1.09-2.478-2.28-2.379-4.162a4.956 4.956 0 014.857-4.659 5.451 5.451 0 014.856 2.974h1.289l4.162-4.163A12.786 12.786 0 00153.525.793a12.488 12.488 0 00-8.623 3.072 12.19 12.19 0 00-3.965 8.822c0 4.559 2.478 8.325 4.857 9.613l7.631 4.361a5.253 5.253 0 013.073 5.947 5.55 5.55 0 01-6.343 4.163c-1.784-.198-3.568-1.586-4.46-2.18l-1.883-1.587-5.352 5.55a15.065 15.065 0 008.523 5.254 22.498 22.498 0 004.163.396 13.876 13.876 0 0013.677-13.776c0-7.236-6.442-10.01-9.019-11.398zm47.574 8.028L192.575.793h-7.83l17.84 43.015.793.792.892-.792L222.011.793h-7.73z" fill="#181716"></path></svg>
+                </div>
+                <div class="nav-right d-block d-xl-none">
+                   <a href="#" style="color: black;"><i class="far fa-user"></i></a>
+                   <a href="#" style="color: black;"><i class="far fa-bell"></i></a> 
+                   </div>
+            </div>
+        </div>   
+
+    </nav>
+
+
+    <div class="videobox">
+        <iframe frameborder="0" src="https://www.youtube.com/embed/cPx5pk94v2E" allowFullScreen="true">
+        </iframe>
+    </div>
+    <h2 class="lv-homepage-push-new__title">路易威登夢幻聖誕大宅</h2>
+    <div class="lv-homepage-push-new__content-links">
+        <a href="#" class="lv-smart-link lv-button -primary lv-homepage-push-new__content-link">
+        <div class="box">
+            <h5 style="color: white;">為她挑選</h5>
+        </div>
+        </a> 
+        <a href="#" class="lv-smart-link lv-button -secondary lv-homepage-push-new__content-link">
+        <div class="box1">
+          <h5 style="color: black;">瀏覽宣傳廣告</h5>
+      </div>
+      </a>
+    </div>
+
+<div class="container-fluid cover">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-12 mb-5">
+            <div class="mycard">
+                <div class="img-wrap">
+                    <img src="./images/20211129_HKTW_Nigo2_DI3.webp" alt="">
+                </div>
+                <div class="botton-area d-none d-md-block">
+                    <h4>
+                        路易威登 X NIGO® 系列
+                    </h4>
+                    <div class="box3">
+                        <div class="button1 py-2 ml-1">
+                            <h5>立即選購</h5>
+                        </div>
+                        <div class="button2 py-2 ml-2">
+                            <h5>瀏覽宣傳廣告</h5>
+                        </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<div class="lv-homepage-push-new__content-links d-block d-md-none">
+    <a href="#" class="lv-smart-link lv-button -primary lv-homepage-push-new__content-link ">
+    <div class="box">
+        <h5 style="color: white;">立即選購</h5>
+    </div>
+    </a> 
+    <a href="#" class="lv-smart-link lv-button -secondary lv-homepage-push-new__content-link">
+    <div class="box1">
+      <h5 style="color: black;">瀏覽宣傳廣告</h5>
+  </div>
+  </a>
+</div>
+<div class="nullbox">
+    <h3>客戶服務</h3>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-lg-6 px-0 ">
+            <div class="pict-move d-flex flex-column">
+                <div class="pict">
+                    <img src="./images/Homepage_Service_Contact_Us_DI3 (3).jpg" alt="">
+                </div>
+                <div class="pict-text">
+                    <h5>預約專門服務</h5>
+                </div>
+                <div class="pict-text1">
+                    <p>請選擇路易威登專門店，預約您的個人化購物體驗。</p>
+                </div>
+                <div class="pict-text3">
+                    <span style="border-bottom:1px solid black ;">立即預約</span>
+                </div>
+            </div>   
+        </div>
+        <div class="col-12 col-sm-12 col-lg-6 px-0 pl-1">
+             <div class="pict-move d-flex flex-column">       
+                <div class="pict1">
+                    <img src="./images/Homepage_Service_Store_Appointment_DI3 (3).jpg" alt="">
+                </div>
+                <div class="pict-text">
+                    <h5>預約專門服務</h5>
+                </div>
+                <div class="pict-text1">
+                    <p>請選擇路易威登專門店，預約您的個人化購物體驗。</p>
+                </div>
+                <div class="pict-text3">
+                    <span style="border-bottom:1px solid black ;">立即預約</span>
+                </div>
+            </div> 
+        </div>  
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="last">
+        <div class="etext">
+            <h5 style="color: white;">LOUIS VUITTON</h5>
+        </div>
+     <div class="lastnav">
+         <div class="tabe">
+             <div class="move-last col-12 col-md-12 col-lg-12 d-flex ">
+         <ul class="lastnav-flv">
+             <li>台灣地區</li>
+             <li>E通訊</li>
+             <li>需要協助？</li>
+             <li>應用程式</li>
+             <li>法律及隱私權資訊</li>
+             <li> 社交帳號</li>
+             <li>工作機會</li>
+             <li>網站導覽</li>
+         </ul>
+        </div>
+        </div>
+
+     </div> 
+     
+     
+     
+     
+    
+     
+     
+     
+      
+  
+
+    
+</footer>
+    
+
+      
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
